@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3E3F29">
   <title>Herziwil Motors — Klassik-Auto Restaurierung & Service</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,16 +11,23 @@
 
   <nav>
     <div class="logo">Herziwil Motors</div>
-    <ul>
+    <ul id="navLinks">
       <li><a href="#about" data-lang="de">Über uns</a><a href="#about" data-lang="en">About</a></li>
       <li><a href="#services" data-lang="de">Leistungen</a><a href="#services" data-lang="en">Services</a></li>
       <li><a href="#gallery" data-lang="de">Galerie</a><a href="#gallery" data-lang="en">Gallery</a></li>
       <li><a href="#contact" data-lang="de">Kontakt</a><a href="#contact" data-lang="en">Contact</a></li>
     </ul>
-    <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">
-      <span data-lang="de">EN</span>
-      <span data-lang="en">DE</span>
-    </button>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Sprache wechseln">
+        <span data-lang="de">EN</span>
+        <span data-lang="en">DE</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-controls="navLinks" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
   </nav>
 
   <!-- Hero -->

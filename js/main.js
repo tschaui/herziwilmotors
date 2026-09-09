@@ -22,6 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
     applyLang(next);
   });
 
+  // Mobile navigation toggle
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navLinks');
+
+  const closeMenu = () => {
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  navToggle.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(open));
+  });
+
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
   // Highlight active nav link on scroll
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -36,10 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navLinks.forEach(link => {
-      link.style.color = '';
-      if (link.getAttribute('href') === `#${current}`) {
-        link.style.color = '#BCA88D';
-      }
+      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
     });
   });
 });
