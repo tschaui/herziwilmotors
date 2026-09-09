@@ -1,0 +1,401 @@
+/* Herziwil Motors - Color Palette
+   #3E3F29 - Dark Olive (primary dark)
+   #7D8D86 - Sage Grey (secondary/muted)
+   #BCA88D - Warm Tan (accent)
+   #F1F0E4 - Cream (background/light)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Fonts --- */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/oswald-latin.woff2') format('woff2');
+}
+
+:root {
+  --dark-olive: #3E3F29;
+  --sage-grey: #7D8D86;
+  --warm-tan: #BCA88D;
+  --cream: #F1F0E4;
+  --font-main: 'Georgia', serif;
+  --font-heading: 'Oswald', 'Georgia', serif;
+}
+
+h1, h2, h3, h4, nav .logo, nav ul li a, .section-title, .section-subtitle, .hero .cta, .lang-toggle, .service-card h3, .contact-details h4 {
+  font-family: var(--font-heading);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--cream);
+  color: var(--dark-olive);
+  line-height: 1.6;
+}
+
+/* --- Language switching --- */
+html[data-lang="de"] [data-lang="en"] {
+  display: none;
+}
+
+html[data-lang="en"] [data-lang="de"] {
+  display: none;
+}
+
+/* --- Navigation --- */
+nav {
+  background-color: var(--dark-olive);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: var(--warm-tan);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--warm-tan);
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--sage-grey);
+  color: var(--warm-tan);
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-toggle:hover {
+  background-color: var(--warm-tan);
+  color: var(--dark-olive);
+  border-color: var(--warm-tan);
+}
+
+/* --- Hero --- */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cream);
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(62, 63, 41, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--warm-tan);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: var(--sage-grey);
+  margin-bottom: 2rem;
+}
+
+.hero .cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--warm-tan);
+  color: var(--dark-olive);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero .cta:hover {
+  background-color: var(--cream);
+  transform: translateY(-2px);
+}
+
+/* --- Sections --- */
+section {
+  padding: 5rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dark-olive);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--sage-grey);
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+/* --- About --- */
+#about {
+  background-color: var(--cream);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: var(--dark-olive);
+}
+
+.about-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Services --- */
+#services {
+  background-color: var(--dark-olive);
+  color: var(--cream);
+}
+
+#services .section-title {
+  color: var(--warm-tan);
+}
+
+#services .section-subtitle {
+  color: var(--sage-grey);
+}
+
+.services-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: rgba(125, 141, 134, 0.2);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid var(--sage-grey);
+  transition: background-color 0.3s;
+}
+
+.service-card:hover {
+  background-color: rgba(125, 141, 134, 0.4);
+}
+
+.service-card h3 {
+  color: var(--warm-tan);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  color: var(--cream);
+  font-size: 0.95rem;
+}
+
+/* --- Gallery --- */
+#gallery {
+  background-color: var(--cream);
+}
+
+.gallery-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  height: 250px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* --- Contact --- */
+#contact {
+  background-color: var(--sage-grey);
+  color: var(--cream);
+}
+
+#contact .section-title {
+  color: var(--warm-tan);
+}
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-wrapper p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--cream);
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+.contact-details h4 {
+  color: var(--warm-tan);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-details p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--dark-olive);
+  color: var(--sage-grey);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+footer .credit {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  color: var(--sage-grey);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+}
