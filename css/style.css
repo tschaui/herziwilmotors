@@ -123,10 +123,6 @@ nav {
   gap: 1rem;
 }
 
-.logo-mobile {
-  display: none;
-}
-
 nav .logo {
   text-decoration: none;
   display: inline-flex;
@@ -500,6 +496,13 @@ section {
   color: var(--cream);
 }
 
+.contact-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 112px;
+  height: 112px;
+}
+
 .contact-wrapper {
   max-width: 700px;
   margin: 0 auto;
@@ -643,10 +646,6 @@ body.lightbox-open {
     padding: 0.8rem 1.25rem;
     display: flex;
     justify-content: space-between;
-  }
-
-  .logo-mobile {
-    display: inline-flex;
   }
 
   nav ul {
