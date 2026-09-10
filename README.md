@@ -29,6 +29,8 @@ The site is deployed via **GitHub Pages**. Any change pushed to the `main` branc
   | `--sage-grey` | `#A9A193` |
   | `--warm-tan` | `#B33A2B` |
   | `--cream` | `#F1E8D8` |
+  | `--ember` | `#CE5F48` |
+  | `--brass` | `#C7A252` |
 
 - **Fonts** — [Oswald](https://fonts.google.com/specimen/Oswald) (variable, weight 400–700, SIL OFL) is self-hosted in `fonts/` and used for headings; body text uses Georgia.
 

@@ -28,10 +28,12 @@ All colors are defined as CSS custom properties in `css/style.css`:
 |---|---|---|
 | `--dark-olive` | `#23211E` | Primary dark (warm charcoal), backgrounds, text |
 | `--sage-grey` | `#A9A193` | Secondary/muted (aged steel), borders, subtle fills |
-| `--warm-tan` | `#B33A2B` | Accent (racing red), CTAs, signature details |
+| `--warm-tan` | `#B33A2B` | Accent (racing red), CTAs, large signature details |
 | `--cream` | `#F1E8D8` | Light background (bone cream), body text on dark |
+| `--ember` | `#CE5F48` | Light rust red, small text accents on dark (readable) |
+| `--brass` | `#C7A252` | Aged gold, decorative highlights on light |
 
-Token names are legacy (colors were changed to a vintage workshop ColorHunt palette); keep referencing the variables, never raw hex.
+Token names are legacy (colors were changed to a vintage workshop ColorHunt palette); keep referencing the variables, never raw hex. Red text on dark must use `--ember` (not `--warm-tan`) to stay readable.
 
 Always reference variables (`var(--dark-olive)`) instead of raw hex values.
 

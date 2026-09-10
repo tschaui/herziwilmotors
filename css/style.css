@@ -1,8 +1,10 @@
 /* Herziwil Motors - Color Palette
    #23211E - Warm Charcoal (primary dark, backgrounds, text)
    #A9A193 - Aged Steel (secondary/muted, borders, subtle fills)
-   #B33A2B - Racing Red (accent, CTAs, signature details)
+   #B33A2B - Racing Red (accent, CTAs, large signature details)
    #F1E8D8 - Bone Cream (light background, body text on dark)
+   #CE5F48 - Ember (light rust red, small text accents on dark)
+   #C7A252 - Brass (aged gold, decorative highlights on light)
 */
 
 * {
@@ -25,6 +27,8 @@
   --sage-grey: #A9A193;
   --warm-tan: #B33A2B;
   --cream: #F1E8D8;
+  --ember: #CE5F48;
+  --brass: #C7A252;
   --font-main: 'Georgia', serif;
   --font-heading: 'Oswald', 'Georgia', serif;
 }
@@ -148,11 +152,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--warm-tan);
+  color: var(--ember);
 }
 
 nav ul li a.active {
-  color: var(--warm-tan);
+  color: var(--ember);
 }
 
 .nav-actions {
@@ -306,6 +310,11 @@ nav ul li a.active {
   color: var(--warm-tan);
   z-index: 1;
   animation: scroll-bounce 2s ease-in-out infinite;
+  transition: color 0.3s;
+}
+
+.scroll-hint:hover {
+  color: var(--brass);
 }
 
 .scroll-hint svg {
@@ -346,6 +355,11 @@ section {
   height: 3px;
   margin: 0.75rem auto 0;
   background-color: var(--warm-tan);
+}
+
+#about .section-title::after,
+#gallery .section-title::after {
+  background-color: var(--brass);
 }
 
 .section-subtitle {
@@ -418,7 +432,7 @@ section {
 }
 
 .service-card h3 {
-  color: var(--warm-tan);
+  color: var(--ember);
   margin-bottom: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -490,7 +504,7 @@ section {
 }
 
 .contact-details h4 {
-  color: var(--warm-tan);
+  color: var(--ember);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
