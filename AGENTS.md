@@ -26,14 +26,14 @@ All colors are defined as CSS custom properties in `css/style.css`:
 
 | Token | Hex | Usage |
 |---|---|---|
-| `--dark-olive` | `#23211E` | Primary dark (warm charcoal), backgrounds, text |
-| `--sage-grey` | `#A9A193` | Secondary/muted (aged steel), borders, subtle fills |
-| `--warm-tan` | `#B33A2B` | Accent (racing red), CTAs, large signature details |
-| `--cream` | `#F1E8D8` | Light background (bone cream), body text on dark |
-| `--ember` | `#CE5F48` | Light rust red, small text accents on dark (readable) |
-| `--brass` | `#C7A252` | Aged gold, decorative highlights on light |
+| `--dark-olive` | `#3E3F29` | Primary dark (olive), backgrounds, text |
+| `--sage-grey` | `#7D8D86` | Secondary/muted (sage), borders, subtle fills |
+| `--warm-tan` | `#BCA88D` | Accent (warm tan), CTAs, headings on dark |
+| `--cream` | `#F1F0E4` | Light background, body text on dark |
+| `--sage-light` | `#A7B4AC` | Muted text on dark (readable, AA) |
+| `--brass` | `#C7A252` | Aged gold, decorative highlights |
 
-Token names are legacy (colors were changed to a vintage workshop ColorHunt palette); keep referencing the variables, never raw hex. Red text on dark must use `--ember` (not `--warm-tan`) to stay readable.
+Token names are legacy (colors were changed to a sage/olive ColorHunt palette); keep referencing the variables, never raw hex. Muted text on dark olive must use `--sage-light` (not `--sage-grey`) to stay readable.
 
 Always reference variables (`var(--dark-olive)`) instead of raw hex values.
 

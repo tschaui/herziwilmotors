@@ -1,10 +1,10 @@
 /* Herziwil Motors - Color Palette
-   #23211E - Warm Charcoal (primary dark, backgrounds, text)
-   #A9A193 - Aged Steel (secondary/muted, borders, subtle fills)
-   #B33A2B - Racing Red (accent, CTAs, large signature details)
-   #F1E8D8 - Bone Cream (light background, body text on dark)
-   #CE5F48 - Ember (light rust red, small text accents on dark)
-   #C7A252 - Brass (aged gold, decorative highlights on light)
+   #3E3F29 - Dark Olive (primary dark, backgrounds, text)
+   #7D8D86 - Sage Grey (secondary/muted, borders, subtle fills)
+   #BCA88D - Warm Tan (accent, CTAs, headings on dark)
+   #F1F0E4 - Cream (light background, body text on dark)
+   #A7B4AC - Sage Light (muted text on dark, readable)
+   #C7A252 - Brass (aged gold, decorative highlights)
 */
 
 * {
@@ -23,11 +23,11 @@
 }
 
 :root {
-  --dark-olive: #23211E;
-  --sage-grey: #A9A193;
-  --warm-tan: #B33A2B;
-  --cream: #F1E8D8;
-  --ember: #CE5F48;
+  --dark-olive: #3E3F29;
+  --sage-grey: #7D8D86;
+  --warm-tan: #BCA88D;
+  --cream: #F1F0E4;
+  --sage-light: #A7B4AC;
   --brass: #C7A252;
   --font-main: 'Georgia', serif;
   --font-heading: 'Oswald', 'Georgia', serif;
@@ -152,11 +152,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--ember);
+  color: var(--warm-tan);
 }
 
 nav ul li a.active {
-  color: var(--ember);
+  color: var(--warm-tan);
 }
 
 .nav-actions {
@@ -214,7 +214,7 @@ nav ul li a.active {
 
 .lang-toggle:hover {
   background-color: var(--warm-tan);
-  color: var(--cream);
+  color: var(--dark-olive);
   border-color: var(--warm-tan);
 }
 
@@ -279,7 +279,7 @@ nav ul li a.active {
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
-  color: var(--sage-grey);
+  color: var(--sage-light);
   margin-bottom: 2rem;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
 }
@@ -288,7 +288,7 @@ nav ul li a.active {
   display: inline-block;
   padding: 0.8rem 2rem;
   background-color: var(--warm-tan);
-  color: var(--cream);
+  color: var(--dark-olive);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -299,7 +299,6 @@ nav ul li a.active {
 
 .hero .cta:hover {
   background-color: var(--cream);
-  color: var(--dark-olive);
   transform: translateY(-2px);
 }
 
@@ -359,13 +358,13 @@ section {
 
 #about .section-title::after,
 #gallery .section-title::after {
-  background-color: var(--brass);
+  background-color: var(--dark-olive);
 }
 
 .section-subtitle {
   text-align: center;
   color: var(--dark-olive);
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 3rem;
   font-size: 1rem;
 }
@@ -407,7 +406,7 @@ section {
 }
 
 #services .section-subtitle {
-  color: var(--sage-grey);
+  color: var(--sage-light);
 }
 
 .services-grid {
@@ -419,20 +418,20 @@ section {
 }
 
 .service-card {
-  background-color: rgba(169, 161, 147, 0.08);
+  background-color: rgba(125, 141, 134, 0.08);
   padding: 2rem;
   text-align: center;
-  border: 1px solid rgba(169, 161, 147, 0.35);
+  border: 1px solid rgba(125, 141, 134, 0.35);
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .service-card:hover {
-  background-color: rgba(179, 58, 43, 0.16);
-  border-color: rgba(179, 58, 43, 0.5);
+  background-color: rgba(188, 168, 141, 0.14);
+  border-color: rgba(188, 168, 141, 0.45);
 }
 
 .service-card h3 {
-  color: var(--ember);
+  color: var(--warm-tan);
   margin-bottom: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -504,7 +503,7 @@ section {
 }
 
 .contact-details h4 {
-  color: var(--ember);
+  color: var(--warm-tan);
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -518,7 +517,7 @@ section {
 /* --- Footer --- */
 footer {
   background-color: var(--dark-olive);
-  color: var(--sage-grey);
+  color: var(--sage-light);
   text-align: center;
   padding: 2rem;
   font-size: 0.85rem;
@@ -530,7 +529,7 @@ footer .credit {
   margin-top: 0.5rem;
   font-size: 0.7rem;
   letter-spacing: 0.5px;
-  color: var(--sage-grey);
+  color: var(--sage-light);
 }
 
 :focus-visible {
@@ -601,7 +600,7 @@ body.lightbox-open {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background-color: var(--warm-tan);
-  color: var(--cream);
+  color: var(--dark-olive);
   border-color: var(--warm-tan);
 }
 

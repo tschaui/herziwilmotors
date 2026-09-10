@@ -25,11 +25,11 @@ The site is deployed via **GitHub Pages**. Any change pushed to the `main` branc
 
   | Token | Hex |
   |---|---|
-  | `--dark-olive` | `#23211E` |
-  | `--sage-grey` | `#A9A193` |
-  | `--warm-tan` | `#B33A2B` |
-  | `--cream` | `#F1E8D8` |
-  | `--ember` | `#CE5F48` |
+  | `--dark-olive` | `#3E3F29` |
+  | `--sage-grey` | `#7D8D86` |
+  | `--warm-tan` | `#BCA88D` |
+  | `--cream` | `#F1F0E4` |
+  | `--sage-light` | `#A7B4AC` |
   | `--brass` | `#C7A252` |
 
 - **Fonts** — [Oswald](https://fonts.google.com/specimen/Oswald) (variable, weight 400–700, SIL OFL) is self-hosted in `fonts/` and used for headings; body text uses Georgia.
