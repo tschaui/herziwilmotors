@@ -1,8 +1,8 @@
 /* Herziwil Motors - Color Palette
-   #3E3F29 - Dark Olive (primary dark)
-   #7D8D86 - Sage Grey (secondary/muted)
-   #BCA88D - Warm Tan (accent)
-   #F1F0E4 - Cream (background/light)
+   #967E76 - Warm Brown (primary dark, backgrounds, text)
+   #B7C4CF - Soft Grey-Blue (secondary/muted, borders, subtle fills)
+   #D7C0AE - Warm Tan (accent, headings, CTAs)
+   #EEE3CB - Soft Cream (light background, body text on dark)
 */
 
 * {
@@ -21,10 +21,10 @@
 }
 
 :root {
-  --dark-olive: #3E3F29;
-  --sage-grey: #7D8D86;
-  --warm-tan: #BCA88D;
-  --cream: #F1F0E4;
+  --dark-olive: #967E76;
+  --sage-grey: #B7C4CF;
+  --warm-tan: #D7C0AE;
+  --cream: #EEE3CB;
   --font-main: 'Georgia', serif;
   --font-heading: 'Oswald', 'Georgia', serif;
 }
@@ -255,7 +255,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(62, 63, 41, 0.7);
+  background: rgba(150, 126, 118, 0.8);
 }
 
 .hero-content {
@@ -338,7 +338,8 @@ section {
 
 .section-subtitle {
   text-align: center;
-  color: var(--sage-grey);
+  color: var(--dark-olive);
+  opacity: 0.8;
   margin-bottom: 3rem;
   font-size: 1rem;
 }
@@ -392,7 +393,7 @@ section {
 }
 
 .service-card {
-  background-color: rgba(125, 141, 134, 0.2);
+  background-color: rgba(183, 196, 207, 0.18);
   padding: 2rem;
   text-align: center;
   border: 1px solid var(--sage-grey);
@@ -400,7 +401,7 @@ section {
 }
 
 .service-card:hover {
-  background-color: rgba(125, 141, 134, 0.4);
+  background-color: rgba(183, 196, 207, 0.35);
 }
 
 .service-card h3 {
@@ -449,7 +450,7 @@ section {
 
 /* --- Contact --- */
 #contact {
-  background-color: var(--sage-grey);
+  background-color: var(--dark-olive);
   color: var(--cream);
 }
 
@@ -495,6 +496,7 @@ footer {
   padding: 2rem;
   font-size: 0.85rem;
   letter-spacing: 1px;
+  border-top: 1px solid rgba(183, 196, 207, 0.35);
 }
 
 footer .credit {
@@ -518,7 +520,7 @@ body.lightbox-open {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background-color: rgba(30, 31, 18, 0.94);
+  background-color: rgba(67, 56, 53, 0.96);
   display: none;
   align-items: center;
   justify-content: center;
