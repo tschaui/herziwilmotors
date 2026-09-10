@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Herziwil Motors Logo">
+  <circle cx="256" cy="256" r="240" fill="#BCA88D"/>
+  <circle cx="256" cy="256" r="206" fill="none" stroke="#C7A252" stroke-width="6"/>
+  <circle cx="256" cy="256" r="192" fill="#F1F0E4"/>
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#3E3F29" stroke-width="4"/>
+
+  <g fill="none" stroke="#3E3F29" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M196 142 V272"/>
+    <path d="M244 142 V272"/>
+    <path d="M196 207 H244"/>
+
+    <path d="M268 272 V162 L294 207 L320 162 V272"/>
+  </g>
+
+  <g fill="none" stroke="#3E3F29" stroke-width="3" stroke-linecap="round">
+    <path d="M180 300 H332"/>
+  </g>
+
+  <path fill="#3E3F29" d="
+    M146 332
+    L146 316
+    Q146 304 158 304
+    L172 296
+    Q192 292 206 292
+    Q240 292 258 282
+    Q274 272 282 272
+    L306 272
+    Q338 272 344 298
+    L350 332
+    Z"/>
+
+  <circle cx="180" cy="332" r="34" fill="#F1F0E4"/>
+  <circle cx="332" cy="332" r="34" fill="#F1F0E4"/>
+  <circle cx="180" cy="332" r="12" fill="#3E3F29"/>
+  <circle cx="332" cy="332" r="12" fill="#3E3F29"/>
+</svg>

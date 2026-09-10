@@ -129,7 +129,15 @@ nav .logo {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+nav .logo img {
+  width: 34px;
+  height: 34px;
+  flex: none;
 }
 
 nav ul {
