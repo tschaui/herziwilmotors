@@ -50,6 +50,7 @@ Always reference variables (`var(--dark-olive)`) instead of raw hex values.
 - Password-protected internal page, deliberately NOT linked in the navigation. Only reachable via direct URL. `robots.txt` disallows it; the page has `<meta name="robots" content="noindex, nofollow">`.
 - Password: `motorher$i` (salted SHA-256 check in `js/visitors.js`, plaintext never stored; brute-force guard locks after 6 fails for 5 min; 4 h session in `sessionStorage`).
 - Static hosting means no server logs: `js/visitor-track.js` (loaded on every page) records page loads of the current browser into `localStorage` (`hm-vstats`); the dashboard reads that, enriches the latest visit with IP/country/city/ISP via `https://ipwho.is/` (fallback `https://ipapi.co/json/`), caches geo per IP (`hm-vgeo`), and is filterable by date range, country, device, browser, page, min. visits/IP, free search; sortable; CSV export.
+- Real visitor stats (no raw IPs, GDPR-friendly, cookie-free) are served by GoatCounter: tracking tag in `index.html` (`data-goatcounter="https://tschaui.goatcounter.com/count"`, script `//gc.zgo.at/count.js`). Only on the public page, NOT on `visitors.html` or internal pages. Dashboard at https://tschaui.goatcounter.com/.
 - When changing the password: update the salted hash constant `PASS_HASH` in `js/visitors.js` (salt prefix `hm-track:`).
 
 ## Gotchas
