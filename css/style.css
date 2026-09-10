@@ -1,8 +1,8 @@
 /* Herziwil Motors - Color Palette
-   #967E76 - Warm Brown (primary dark, backgrounds, text)
-   #B7C4CF - Soft Grey-Blue (secondary/muted, borders, subtle fills)
-   #D7C0AE - Warm Tan (accent, headings, CTAs)
-   #EEE3CB - Soft Cream (light background, body text on dark)
+   #23211E - Warm Charcoal (primary dark, backgrounds, text)
+   #A9A193 - Aged Steel (secondary/muted, borders, subtle fills)
+   #B33A2B - Racing Red (accent, CTAs, signature details)
+   #F1E8D8 - Bone Cream (light background, body text on dark)
 */
 
 * {
@@ -21,10 +21,10 @@
 }
 
 :root {
-  --dark-olive: #967E76;
-  --sage-grey: #B7C4CF;
-  --warm-tan: #D7C0AE;
-  --cream: #EEE3CB;
+  --dark-olive: #23211E;
+  --sage-grey: #A9A193;
+  --warm-tan: #B33A2B;
+  --cream: #F1E8D8;
   --font-main: 'Georgia', serif;
   --font-heading: 'Oswald', 'Georgia', serif;
 }
@@ -198,7 +198,7 @@ nav ul li a.active {
 .lang-toggle {
   background: none;
   border: 1px solid var(--sage-grey);
-  color: var(--warm-tan);
+  color: var(--cream);
   padding: 0.4rem 1.2rem;
   cursor: pointer;
   font-family: var(--font-main);
@@ -210,7 +210,7 @@ nav ul li a.active {
 
 .lang-toggle:hover {
   background-color: var(--warm-tan);
-  color: var(--dark-olive);
+  color: var(--cream);
   border-color: var(--warm-tan);
 }
 
@@ -255,7 +255,7 @@ nav ul li a.active {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(150, 126, 118, 0.8);
+  background: rgba(35, 33, 30, 0.6);
 }
 
 .hero-content {
@@ -268,7 +268,8 @@ nav ul li a.active {
   letter-spacing: clamp(2px, 0.8vw, 4px);
   text-transform: uppercase;
   margin-bottom: 1rem;
-  color: var(--warm-tan);
+  color: var(--cream);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 }
 
 .hero p {
@@ -276,13 +277,14 @@ nav ul li a.active {
   max-width: 600px;
   color: var(--sage-grey);
   margin-bottom: 2rem;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
 }
 
 .hero .cta {
   display: inline-block;
   padding: 0.8rem 2rem;
   background-color: var(--warm-tan);
-  color: var(--dark-olive);
+  color: var(--cream);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -293,6 +295,7 @@ nav ul li a.active {
 
 .hero .cta:hover {
   background-color: var(--cream);
+  color: var(--dark-olive);
   transform: translateY(-2px);
 }
 
@@ -336,6 +339,15 @@ section {
   margin-bottom: 1rem;
 }
 
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0.75rem auto 0;
+  background-color: var(--warm-tan);
+}
+
 .section-subtitle {
   text-align: center;
   color: var(--dark-olive);
@@ -377,7 +389,7 @@ section {
 }
 
 #services .section-title {
-  color: var(--warm-tan);
+  color: var(--cream);
 }
 
 #services .section-subtitle {
@@ -393,15 +405,16 @@ section {
 }
 
 .service-card {
-  background-color: rgba(183, 196, 207, 0.18);
+  background-color: rgba(169, 161, 147, 0.08);
   padding: 2rem;
   text-align: center;
-  border: 1px solid var(--sage-grey);
-  transition: background-color 0.3s;
+  border: 1px solid rgba(169, 161, 147, 0.35);
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .service-card:hover {
-  background-color: rgba(183, 196, 207, 0.35);
+  background-color: rgba(179, 58, 43, 0.16);
+  border-color: rgba(179, 58, 43, 0.5);
 }
 
 .service-card h3 {
@@ -455,7 +468,7 @@ section {
 }
 
 #contact .section-title {
-  color: var(--warm-tan);
+  color: var(--cream);
 }
 
 .contact-wrapper {
@@ -496,7 +509,7 @@ footer {
   padding: 2rem;
   font-size: 0.85rem;
   letter-spacing: 1px;
-  border-top: 1px solid rgba(183, 196, 207, 0.35);
+  border-top: 3px solid var(--warm-tan);
 }
 
 footer .credit {
@@ -520,7 +533,7 @@ body.lightbox-open {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background-color: rgba(67, 56, 53, 0.96);
+  background-color: rgba(25, 24, 22, 0.96);
   display: none;
   align-items: center;
   justify-content: center;
@@ -574,7 +587,7 @@ body.lightbox-open {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   background-color: var(--warm-tan);
-  color: var(--dark-olive);
+  color: var(--cream);
   border-color: var(--warm-tan);
 }
 

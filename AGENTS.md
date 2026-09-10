@@ -26,12 +26,12 @@ All colors are defined as CSS custom properties in `css/style.css`:
 
 | Token | Hex | Usage |
 |---|---|---|
-| `--dark-olive` | `#967E76` | Primary dark (warm brown), backgrounds, text |
-| `--sage-grey` | `#B7C4CF` | Secondary/muted, borders, subtle fills |
-| `--warm-tan` | `#D7C0AE` | Accent, headings, CTAs |
-| `--cream` | `#EEE3CB` | Light background, body text on dark |
+| `--dark-olive` | `#23211E` | Primary dark (warm charcoal), backgrounds, text |
+| `--sage-grey` | `#A9A193` | Secondary/muted (aged steel), borders, subtle fills |
+| `--warm-tan` | `#B33A2B` | Accent (racing red), CTAs, signature details |
+| `--cream` | `#F1E8D8` | Light background (bone cream), body text on dark |
 
-Token names are legacy (colors were changed to a warm ColorHunt palette); keep referencing the variables, never raw hex.
+Token names are legacy (colors were changed to a vintage workshop ColorHunt palette); keep referencing the variables, never raw hex.
 
 Always reference variables (`var(--dark-olive)`) instead of raw hex values.
 
