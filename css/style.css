@@ -551,6 +551,14 @@ footer .credit {
   color: var(--sage-light);
 }
 
+footer .test-note {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--warm-tan);
+  text-transform: uppercase;
+}
+
 :focus-visible {
   outline: 2px solid var(--warm-tan);
   outline-offset: 2px;
