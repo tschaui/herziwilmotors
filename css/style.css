@@ -515,8 +515,9 @@ section {
 }
 
 .contact-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   text-align: center;
 }
@@ -706,10 +707,6 @@ body.lightbox-open {
 
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .contact-details {
-    grid-template-columns: 1fr;
   }
 }
 
